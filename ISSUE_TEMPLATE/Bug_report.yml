@@ -1,0 +1,20 @@
+name: Bug Report
+description: "Report something that's broken or otherwise not working as expected."
+body:
+  - type: markdown
+    attributes:
+      value: "Before submitting your issue, please ensure that you have read our Contributor Code of Conduct and you have read through existing issues so as to avoid creating duplicates."
+  - type: textarea
+    attributes:
+      label: Description
+      description: Please write a brief description of the bug, including what you expect to happen and what is currently happening.
+      value: "<Some feature> is not working properly. I would expect <this> to happen, but instead <this>' happens."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Provide detailed steps to reproduce your issue. If necessary, please provide a gist to demonstrate your issue.
+    validations:
+      required: true
+      value: "1. "
