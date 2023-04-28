@@ -1,18 +1,23 @@
-name: Bug Report
-description: "Report a feature or enhancement."
+name: ✨Feature Request
+description: Request a new feature or enhancement
+labels: ["enhancement"]
+title: "[FEAT]: "
 body:
   - type: markdown
     attributes:
-      value: "Before submitting your issue, please ensure that you have read our Contributor Code of Conduct and you have read through existing issues so as to avoid creating duplicates."
+      value: |
+        Please make sure this feature request hasn't been already submitted by someone by looking through other open/closed issues
+
   - type: textarea
+    id: description
     attributes:
       label: Description
-      description: Provide a detailed description of the feature or enhancement you would like to see incorporated.
+      description: Give us a brief description of the feature or enhancement you would like
     validations:
       required: true
+
   - type: textarea
+    id: additional-information
     attributes:
-      label: Use Case
-      description: Provide detailed description of the use case for this feature/enhancement.
-    validations:
-      required: true
+      label: Additional Information
+      description: Give us some additional information on the feature request like proposed solutions, links, screenshots, etc.
