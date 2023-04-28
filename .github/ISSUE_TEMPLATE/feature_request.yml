@@ -1,4 +1,4 @@
-name: ✨Feature Request
+name: Feature or Enhancement Request
 description: Request a new feature or enhancement
 labels: ["enhancement"]
 title: "[FEAT]: "
@@ -6,18 +6,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please make sure this feature request hasn't been already submitted by someone by looking through other open/closed issues, also please read our [Contributor Code of Conduct](../CODE_OF_CONDUCT.md). 🙏
+        Before submitting your issue, please ensure that you have read our [Code of Conduct](https://github.com/alleyinteractive/.github/blob/main/CODE_OF_CONDUCT.md) and you have read through existing issues so as to avoid creating duplicates. 🙏 
 
   - type: textarea
-    id: description
     attributes:
       label: Description
-      description: Give us a brief description of the feature or enhancement you would like
+      description: Provide a detailed description of the feature or enhancement you would like to see incorporated.
+      placeholder: |
+        e.g.
+        I would like to see <...> incorporated into <...> so that <...> can be achieved.
     validations:
       required: true
 
   - type: textarea
-    id: additional-information
     attributes:
-      label: Additional Information
-      description: Give us some additional information on the feature request like proposed solutions, links, screenshots, etc.
+      label: Use Case
+      description: Provide a detailed description of the use case for this feature/enhancement.
+    validations:
+      required: true
